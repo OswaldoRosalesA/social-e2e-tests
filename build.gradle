@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'microservices.book'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'info.cukes:cucumber-java:1.2.5'
+    testCompile 'info.cukes:cucumber-junit:1.2.5'
+    testCompile 'info.cukes:cucumber-picocontainer:1.2.5'
+    testCompile 'com.fasterxml.jackson.core:jackson-core:2.10.3'
+    testCompile 'com.fasterxml.jackson.core:jackson-annotations:2.10.3'
+    testCompile 'com.fasterxml.jackson.core:jackson-databind:2.10.3'
+    testCompile 'org.apache.httpcomponents:fluent-hc:4.5.12'
+    testCompile 'org.assertj:assertj-core:3.15.0'
+    testCompile 'junit:junit:4.12'
+}
